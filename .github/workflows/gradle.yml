@@ -39,7 +39,7 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: Package
-        path: build/libs
+        path: build/libs/
     - name: Docker build and push
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
