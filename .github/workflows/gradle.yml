@@ -30,20 +30,7 @@ jobs:
       
 #     - name: Build with gradle
 #       run: ./gradlew build
-    - name: Validate Gradle wrapper
-      uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
-    - name: Build with Gradle
-      uses: gradle/gradle-build-action@937999e9cc2425eddc7fd62d1053baf041147db7
+   
+    - uses: gradle/gradle-build-action@v2
       with:
-        arguments: build
-    - uses: actions/upload-artifact@master
-      with:
-        name: Package
-        path: public/
-    - name: Docker build and push
-      uses: mr-smithers-excellent/docker-build-push@v5
-      with:
-        image: vizzwastaken/docker-jenkins-integration
-        registry: docker.io
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+         arguments: build
