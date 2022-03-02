@@ -35,7 +35,7 @@ jobs:
         with: 
           name: Package
       - name: check2
-        run: cd app/build && ls 
+        run: cd /home/runner/work/actionG/actionG && ls
 
 
     
