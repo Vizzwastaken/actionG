@@ -24,7 +24,7 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: check
-        run: pwd
+        run: ls
           
       - name: build
         run: gradle build
