@@ -31,6 +31,9 @@ jobs:
         with:
           name: Package
           path: app/build/libs
+      - uses: actions/download-artifact@v2
+        with: 
+          name: Package
 
 
     
