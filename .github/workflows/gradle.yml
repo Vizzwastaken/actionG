@@ -26,11 +26,11 @@ jobs:
       - name: build
         run: gradle build
       - name: check
-        run: cd app && ls
+        run: cd app/build && ls && cd libs && ls
       - uses: actions/upload-artifact@v2
         with:
           name: Package
-          path: public/
+          path: app/build/libs
 
 
     
