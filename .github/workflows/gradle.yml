@@ -25,11 +25,11 @@ jobs:
           distribution: 'adopt'
           
       - name: build
-        run: gradle --version
-#       - uses: actions/upload-artifact@v2
-#         with:
-#           name: Package
-#           path: build/libs
+        run: gradle build
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Package
+          path: build/libs
 
 
     
