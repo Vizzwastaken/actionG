@@ -25,7 +25,7 @@ jobs:
           distribution: 'adopt'
           
       - name: build
-        run: gradle --veriosn
+        run: gradle --version
 #       - uses: actions/upload-artifact@v2
 #         with:
 #           name: Package
