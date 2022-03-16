@@ -20,6 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: test
+        shell: pwsh
         run: |
           curl --help
 #       - uses: actions/setup-java@v2
