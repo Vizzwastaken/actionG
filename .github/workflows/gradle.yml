@@ -16,26 +16,27 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-java@v2
-        with:
-          java-version: '11'
-          distribution: 'adopt'
-      - name: build
-        run: gradle build
-      - name: check
-        run: cd app/build && ls && cd libs && ls
-      - uses: actions/upload-artifact@v2
-        with:
-          name: Package
-          path: app/build/libs
-      - uses: actions/download-artifact@v2
-        with: 
-          name: Package
-      - name: check2
-        run: cd /home/runner/work/actionG/actionG && ls
+        run: curl.exe
+#       - uses: actions/setup-java@v2
+#         with:
+#           java-version: '11'
+#           distribution: 'adopt'
+#       - name: build
+#         run: gradle build
+#       - name: check
+#         run: cd app/build && ls && cd libs && ls
+#       - uses: actions/upload-artifact@v2
+#         with:
+#           name: Package
+#           path: app/build/libs
+#       - uses: actions/download-artifact@v2
+#         with: 
+#           name: Package
+#       - name: check2
+#         run: cd /home/runner/work/actionG/actionG && ls
 
 
     
