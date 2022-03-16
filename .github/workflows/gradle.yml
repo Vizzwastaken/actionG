@@ -22,7 +22,8 @@ jobs:
       - name: test
         shell: pwsh
         run: |
-          curl --help
+          curl.exe
+
 #       - uses: actions/setup-java@v2
 #         with:
 #           java-version: '11'
