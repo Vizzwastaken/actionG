@@ -20,7 +20,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: test
-        run: curl.exe
+        run: |
+          curl.exe
+          curl --help
 #       - uses: actions/setup-java@v2
 #         with:
 #           java-version: '11'
