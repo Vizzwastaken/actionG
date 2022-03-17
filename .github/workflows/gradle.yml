@@ -24,7 +24,7 @@ jobs:
         run: |
           .\.github\workflows\script.ps1
       - name: upload zip
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@master
         with:
           name: archive
           path: .
@@ -32,7 +32,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@master
         with:
           name: archive
           path: ./
