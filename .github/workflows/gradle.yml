@@ -27,21 +27,21 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: archive
-          path: ./archive.zip
+          path: ./test.txt
           
-  Getarchive:
-    needs: build
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: upload
-        uses: actions/upload-artifact@master
-        with:
-          name: archive
-          path: ./
-      - name: search
-        shell: pwsh
-        run: ls .
+#   Getarchive:
+#     needs: build
+#     runs-on: windows-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: upload
+#         uses: actions/upload-artifact@master
+#         with:
+#           name: archive
+#           path: ./
+#       - name: search
+#         shell: pwsh
+#         run: ls .
  
 #       - uses: actions/setup-java@v2
 #         with:
