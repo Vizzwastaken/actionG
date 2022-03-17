@@ -29,18 +29,18 @@ jobs:
           name: archive
           path: .
           
-#   Getarchive:
-#     runs-on: windows-latest
-#     steps:
-#       - uses: actions/checkout@v2
-#       - name: upload
-#         uses: actions/upload-artifact@master
-#         with:
-#           name: archive
-#           path: ./
-#       - name: search
-#         shell: pwsh
-#         run: ls archive.zip
+  Getarchive:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: upload
+        uses: actions/upload-artifact@master
+        with:
+          name: archive
+          path: ./
+      - name: search
+        shell: pwsh
+        run: ls archive.zip
  
 #       - uses: actions/setup-java@v2
 #         with:
