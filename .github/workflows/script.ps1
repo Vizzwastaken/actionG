@@ -1,3 +1,3 @@
 new-item .\test.txt
-Compress-Archive -Path .\test.txt -DestinationPath .\archive.zip
+Compress-Archive -Path .\test.txt -DestinationPath .\archive
 ls 
