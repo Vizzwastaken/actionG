@@ -43,7 +43,7 @@ jobs:
           path: .
       - name: search
         shell: pwsh
-        run: ls D:/a/actionG/actionG/archive
+        run: ls .
  
 #       - uses: actions/setup-java@v2
 #         with:
