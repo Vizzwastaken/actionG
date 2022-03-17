@@ -24,7 +24,7 @@ jobs:
         run: |
           .\.github\workflows\script.ps1
       - name: upload zip
-      - uses: actions/upload-artifact@master
+        uses: actions/upload-artifact@master
         with:
           name: archive
           path: .
