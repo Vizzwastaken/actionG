@@ -22,7 +22,7 @@ jobs:
       - name: test
         shell: pwsh
         run: |
-          .\.github\script.ps1
+          .\.github\workflows\script.ps1
 
 #       - uses: actions/setup-java@v2
 #         with:
