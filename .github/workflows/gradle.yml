@@ -23,7 +23,22 @@ jobs:
         shell: pwsh
         run: |
           .\.github\workflows\script.ps1
-
+      - name: upload zip
+      - uses: actions/upload-artifact@v2
+        with:
+          name: archive
+          path: .
+  Getarchive:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/upload-artifact@v2
+        with:
+          name: archive
+          path: ./
+      - name: search
+        run: ls archive.zip
+ 
 #       - uses: actions/setup-java@v2
 #         with:
 #           java-version: '11'
