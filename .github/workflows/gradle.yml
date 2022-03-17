@@ -21,15 +21,15 @@ jobs:
       - uses: actions/checkout@v2
       - name: a
         run: pwd
-#       - name: test
-#         shell: pwsh
-#         run: |
-#           .\.github\workflows\script.ps1
-#       - name: upload zip
-#         uses: actions/upload-artifact@master
-#         with:
-#           name: archive
-#           path: ./test.txt
+      - name: test
+        shell: pwsh
+        run: |
+          .\.github\workflows\script.ps1
+      - name: upload zip
+        uses: actions/upload-artifact@master
+        with:
+          name: archive
+          path: D:/a/actionG/actionG/
           
 #   Getarchive:
 #     needs: build
