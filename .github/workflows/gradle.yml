@@ -40,7 +40,7 @@ jobs:
         uses: actions/download-artifact@master
         with:
           name: archive
-          path: D:/a/actionG/actionG/archive
+          path: .
       - name: search
         shell: pwsh
         run: ls D:/a/actionG/actionG/archive
