@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: archive
-          path: D:/a/actionG/actionG/
+          path: D:/a/actionG/actionG/archive/
           
 #   Getarchive:
 #     needs: build
