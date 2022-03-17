@@ -37,7 +37,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: upload
-        uses: actions/upload-artifact@master
+        uses: actions/download-artifact@master
         with:
           name: archive
           path: D:/a/actionG/actionG/archive
