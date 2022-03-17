@@ -40,7 +40,7 @@ jobs:
           path: ./
       - name: search
         shell: pwsh
-        run: ls archive
+        run: ls .
  
 #       - uses: actions/setup-java@v2
 #         with:
