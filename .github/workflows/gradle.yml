@@ -28,15 +28,18 @@ jobs:
         with:
           name: archive
           path: .
+          
   Getarchive:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/upload-artifact@master
+      - name: upload
+        uses: actions/upload-artifact@master
         with:
           name: archive
           path: ./
       - name: search
+        shell: pwsh
         run: ls archive.zip
  
 #       - uses: actions/setup-java@v2
